@@ -7,6 +7,15 @@ This program implements an algorithm that reconstructs the RNA chain out of two 
  
 [Full project description](https://github.com/olgakent/RNAchain_reconstruction/blob/master/rnachain.pdf)
 
+To compile and run the program on terminal type:
+
+    - make
+    - ./RNAchain
+    
+To delete executables and object file type:
+
+    -  make clean
+    
 ### Example
 
 Input:
