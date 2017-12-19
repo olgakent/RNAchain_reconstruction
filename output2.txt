@@ -1,0 +1,14 @@
+Enter G-enzyme fragments:AG,UCAG,UG,AG,CA
+AG
+U C AG
+U G
+AG
+C A
+Enter UC-enzyme fragments:AGU,C,AGU,GAGC,A
+AG U
+C
+AG U
+G AG C
+A
+Possible chains
+AGUCAGUGAGCA
