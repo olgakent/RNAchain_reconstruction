@@ -1,3 +1,9 @@
+/*******************************************************************************
+Author:			Olga Kent
+Course:		    CSCI 393 Independent Study / Graph theory
+Professor:		Christina Zamfirescu
+Name:			Graph.h
+*******************************************************************************/
 #include<string>
 #include<vector>
 using namespace std;

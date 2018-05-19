@@ -2,7 +2,6 @@ CC = g++
 LFLAGS = -std=c++11
 CFLAGS = -c -Wall
 
-# Edit the following two lines when compiling
 # EXECUTABLE_NAME is the name of the program to run
 # SOURCES should include all the .cpp files to compile
 EXECUTABLE_NAME = RNAchain

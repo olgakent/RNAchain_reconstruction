@@ -1,14 +1,17 @@
-Enter G-enzyme fragments:AG,UCAG,UG,AG,CA
+**************************************************
+              RNA CHAIN RECONTRUCTION
+**************************************************
+Enter G-enzyme fragments: G,AG,UG,AG,UCG
+G
 AG
-U C AG
 U G
 AG
-C A
-Enter UC-enzyme fragments:AGU,C,AGU,GAGC,A
-AG U
+U C G
+Enter UC-enzyme fragments: C,GC,GGU,AGGU
 C
-AG U
-G AG C
-A
-Possible chains
-AGUCAGUGAGCA
+G C
+G G U
+AG G U
+Possible chains:
+AGGUGGUCGC
+AGGUCGGUGC

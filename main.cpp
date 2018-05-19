@@ -1,16 +1,23 @@
 /*******************************************************************************
- Author:		Olga Kent
+Author:			Olga Kent
+Course:		    CSCI 393 Independent Study / Graph theory
+Professor:		Christina Zamfirescu
+Name:			main.cpp
 
  A program that reconstructs the RNA chain out of two sets of fragments:
  1) one set is obtained after applying the G-enzyme on the RNA chain
- 2) the other set is obtained after applying the U.C-enzyme on another,
+ 2) the other set is obtained after applying the UC-enzyme on another,
  identical RNA chain.
 
  Example input:
 	gEnzyme  = "AUCG,AUG,G,CU,ACUAUACG";
 	ucEnzyme = "GGAC,U,AU,GAU,C,U,AC,GC,AU";
-
-
+ Example ouput:
+	Possible chains
+	AUCGGACUAUACGAUGCU
+	AUCGAUGGACUAUACGCU
+	AUGGACUAUACGAUCGCU
+	AUGAUCGGACUAUACGCU
  *******************************************************************************/
 
 
@@ -76,13 +83,17 @@ void splitUCEnzyme(string item, vector<string> &splited) {
 
 int main() {
 
+	cout << "**************************************************\n";
+	cout << "              RNA CHAIN RECONSTRUCTION             \n";
+	cout << "**************************************************\n";
+
 	vector<string> gEnzyme;
 	vector< vector<string> > gEnzymeSplit;
 
 	vector<string> ucEnzyme;
 	vector< vector<string> > ucEnzymeSplit;
 
-	cout << "Enter G-enzyme fragments:";
+	cout << "Enter G-enzyme fragments: ";
 	readEnzyme(gEnzyme);
 
 	int i;
@@ -96,7 +107,7 @@ int main() {
 		cout << endl;
 	}
 
-	cout << "Enter UC-enzyme fragments:";
+	cout << "Enter UC-enzyme fragments: ";
 	readEnzyme(ucEnzyme);
 
 	for (i = 0; i < ucEnzyme.size(); i++) {
@@ -135,7 +146,7 @@ int main() {
 		}
 	}
 
-	cout << "Possible chains" << endl;
+	cout << "Possible chains: " << endl;
 
 	graph.printEulerians();
 	//cin.get();

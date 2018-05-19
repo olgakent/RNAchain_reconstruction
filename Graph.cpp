@@ -1,3 +1,9 @@
+/*******************************************************************************
+Author:			Olga Kent
+Course:		    CSCI 393 Independent Study / Graph theory
+Professor:		Christina Zamfirescu
+Name:			Graph.cpp
+*******************************************************************************/
 #include<iostream>
 #include<vector>
 #include<string>
