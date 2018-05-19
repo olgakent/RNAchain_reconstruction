@@ -16,7 +16,7 @@ To delete executables and object file type:
 
     -  make clean
     
-### Example
+### Example 1
 
 Input:
 ```
@@ -47,26 +47,53 @@ Output:
     AUGAUCGGACUAUACGCU
 ```
 <p align="left">Multigraph for the given fragments where each fragment becomes an arc from a vertex labeled with the beginning of the fragment to a vertex labeled with the end of the fragment:</p>
-<p align="center"><img src="./multigraph.png" alt="multigraph" width=50%></p>
+<p align="center"><img src="./graph1.png" alt="multigraph" width=50%></p>
 
-### Example
+### Example 2
 Input:
 ```
-    Enter G-enzyme fragments:AG,UCAG,UG,AG,CA
-    AG
-    U C AG
-    U G
-    AG
-    C A
-    Enter UC-enzyme fragments:AGU,C,AGU,GAGC,A
-    AG U
-    C
-    AG U
-    G AG C
-    A
+     Enter G-enzyme fragments: G,AG,UG,AG,UCG
+     G
+     AG
+     U G
+     AG
+     U C G
+     Enter UC-enzyme fragments: C,GC,GGU,AGGU
+     C
+     G C
+     G G U
+     AG G U
 ```
 Output:
 ```
-Possible chains:
-AGUCAGUGAGCA
+     Possible chains:
+     AGGUGGUCGC
+     AGGUCGGUGC
 ```
+<p align="center"><img src="./graph2.png" alt="multigraph" width=50%></p>
+
+### Example 3
+Input:
+```
+     Enter G-enzyme fragments: G,U,UG,UG,AUAG,UG,G
+     G
+     U
+     U G
+     U G
+     AU AG
+     U G
+     G
+     Enter UC-enzyme fragments: U,AGU,AGU,GAU,GGU
+     U
+     AG U
+     AG U
+     G AU
+     G G U
+```
+Output:
+```
+     Possible chains:
+     AGUGAUAGUGGUG
+     AGUGGUGAUAGUG
+```
+<p align="center"><img src="./graph3.png" alt="multigraph" width=50%></p>
